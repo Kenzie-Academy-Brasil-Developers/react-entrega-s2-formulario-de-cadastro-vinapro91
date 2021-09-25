@@ -1,9 +1,9 @@
 import { Route, Switch } from "react-router";
 import Register from "../pages/Register";
 import Home from "../pages/Home";
-import Login from "../pages/Login";
+
 import { useState } from "react";
-import { Container } from "@material-ui/core";
+import { Container, Typography } from "@material-ui/core";
 const Routes = () => {
   const [isLogeed, setIsLogeed] = useState(false);
   return (
@@ -25,7 +25,9 @@ const Routes = () => {
             }}
             color="primary"
           >
-            Não Autorizado, Click em Login para entrar no sistema!
+            <Typography>
+              Não Autorizado, Click em Login para entrar no sistema!
+            </Typography>
           </Container>
         )}
       </Route>

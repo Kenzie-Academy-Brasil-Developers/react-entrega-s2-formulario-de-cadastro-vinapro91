@@ -18,8 +18,8 @@ const Home = () => {
         color="primary"
       >
         <h1> Bem Vindo, {id} !</h1>
+        <Link to="/">Voltar</Link>
       </Container>
-      <Link to="/">Voltar</Link>
     </div>
   );
 };
